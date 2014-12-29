@@ -24,7 +24,7 @@ module.exports = (dest)->
       yearlyArchive = _.groupBy posts, (post)-> post.year
       monthlyArchive = _.groupBy posts, (post)-> "#{post.year}-#{post.month}"
       allArchive = allArchive.map (posts, index)-> {index: index, posts: posts, isHead: false, isLast: false}
-      allArchive[0].isLast = allArchive[allArchive.length-1].isHead = true
+      allArchive[0].isHead = allArchive[allArchive.length-1].isLast = true
       _.each _.keys(yearlyArchive), (key)-> yearlyArchive[key] = {year: key, posts: yearlyArchive[key]}
       _.each _.keys(monthlyArchive), (key)->
         splitedKey = key.split '-'
