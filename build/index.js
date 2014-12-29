@@ -57,7 +57,7 @@
               isLast: false
             };
           });
-          allArchive[0].isLast = allArchive[allArchive.length - 1].isHead = true;
+          allArchive[0].isHead = allArchive[allArchive.length - 1].isLast = true;
           _.each(_.keys(yearlyArchive), function(key) {
             return yearlyArchive[key] = {
               year: key,
