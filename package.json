@@ -2,7 +2,12 @@
   "name": "gulp-article-archive",
   "version": "0.0.2",
   "description": "gulp plugin for article archive",
-  "keywords": [],
+  "keywords": [
+    "gulpplugin",
+    "article",
+    "archive",
+    "gulp"
+  ],
   "main": "build/index.js",
   "scripts": {
     "test": "./node_modules/.bin/gulp test"
